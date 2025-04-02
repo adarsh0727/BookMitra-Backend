@@ -38,6 +38,9 @@ BOOKMITRA-BACKEND/
 └── server.js           # Main application entry point
 ```
 
+## Backend Flow
+![Image](https://github.com/user-attachments/assets/bfa2d412-2596-4ab4-b38a-fd49c89e4b72)
+
 ## Features
 
 - **User Authentication**: Secure JWT-based authentication system
