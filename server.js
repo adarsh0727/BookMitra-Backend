@@ -1,5 +1,5 @@
+dotenv.config();
 import express from "express";
-import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
 import authRoutes from "./routes/auth.routes.js";
@@ -7,7 +7,7 @@ import booksRoute from "./routes/books.routes.js";
 import userRoutes from "./routes/user.routes.js";
 import transactionRoutes from "./routes/transaction.routes.js";
 import categoryRoutes from "./routes/categories.routes.js";
-import {connect} from "./db/connect.js"
+import connect from "./db/connect.js"
 
 /* App Config */
 dotenv.config();
