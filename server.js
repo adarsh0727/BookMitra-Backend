@@ -6,7 +6,7 @@ import authRoutes from "./routes/auth.routes.js";
 import booksRoute from "./routes/books.routes.js";
 import userRoutes from "./routes/user.routes.js";
 import transactionRoutes from "./routes/transactions.js";
-import categoryRoutes from "./routes/categories.js";
+import categoryRoutes from "./routes/categories.routes.js";
 
 /* App Config */
 dotenv.config();
