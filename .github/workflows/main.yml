@@ -34,7 +34,7 @@ jobs:
       - name: Run Docker Container with Env Variables
         run: |
           docker run -d -p 5000:5000 \
-            --name nodejs-app-container \
+            --name bookmitra-backend \
             -e PORT='${{ secrets.PORT }}' \
             -e MONGO_URL='${{ secrets.MONGO_URL }}' \
             -e JWT_SECRET='${{ secrets.JWT_SECRET }}' \
