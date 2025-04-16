@@ -1,4 +1,6 @@
+
 dotenv.config();
+
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
@@ -19,7 +21,7 @@ app.use(express.json());
 app.use( 
     
   cors({
-    origin: "http://localhost:5234",
+    origin: "http://localhost:3000",
     credentials: true,
   }),
 );
@@ -36,7 +38,7 @@ app.use("/api/categories", categoryRoutes);
 connect();
 
 app.get("/", (req, res) => {
-  res.status(200).send("Welcome to LibraryApp");
+  res.status(200).send("Welcome to Bookmitra");
 });
 
 /* Port Listening In */

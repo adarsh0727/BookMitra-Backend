@@ -1,6 +1,5 @@
 import User from "../models/User.js";
 
-/* User Registration */
 export const registerUser = async (req, res) => {
     try {
         console.log("Registering User:", req.body);
@@ -16,7 +15,7 @@ export const registerUser = async (req, res) => {
             address: req.body.address,
             mobileNumber: req.body.mobileNumber,
             email: req.body.email,
-            password: req.body.password, // Store plain password for now
+            password: req.body.password, 
             isAdmin: req.body.isAdmin,
         });
 

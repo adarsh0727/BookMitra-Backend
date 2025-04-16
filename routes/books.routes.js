@@ -16,8 +16,8 @@ router.get("/allbooks", getAllBooks);
 router.get("/getbook/:id", getBookById);
 router.get("/", getBooksByCategory);
 
-router.post("/addbook", protect, isAdmin, addBook);
-router.put("/updatebook/:id", protect, isAdmin, updateBook);
-router.delete("/removebook/:id", protect, isAdmin, removeBook);
+router.post("/addbook", addBook);
+router.put("/updatebook/:id",  updateBook);
+router.delete("/removebook/:id", removeBook);
 
 export default router;
