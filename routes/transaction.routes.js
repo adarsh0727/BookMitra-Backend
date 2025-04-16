@@ -9,9 +9,9 @@ import { protect, isAdmin } from "../middlewares/auth.middleware.js";
 
 const router = express.Router();
 
-router.post("/add-transaction", protect, isAdmin, addTransaction);
-router.get("/all-transactions", protect, getAllTransactions);
-router.put("/update-transaction/:id", protect, isAdmin, updateTransaction);
-router.delete("/remove-transaction/:id", protect, isAdmin, removeTransaction);
+router.post("/add-transaction",addTransaction);
+router.get("/all-transactions", getAllTransactions);
+router.put("/update-transaction/:id", updateTransaction);
+router.delete("/remove-transaction/:id", removeTransaction);
 
 export default router;

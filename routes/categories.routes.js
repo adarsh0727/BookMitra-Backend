@@ -5,6 +5,6 @@ import { protect, isAdmin } from "../middlewares/auth.middleware.js";
 const router = express.Router();
 
 router.get("/allcategories", getAllCategories);
-router.post("/addcategory", protect, isAdmin, addCategory);
+router.post("/addcategory", addCategory);
 
 export default router;
