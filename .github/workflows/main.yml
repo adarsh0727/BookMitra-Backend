@@ -39,3 +39,4 @@ jobs:
             -e MONGO_URL='${{ secrets.MONGO_URI }}' \
             -e JWT_SECRET='${{ secrets.JWT_SECRET }}' \
             adarsh11011/bookmitra-backend-app:latest
+
