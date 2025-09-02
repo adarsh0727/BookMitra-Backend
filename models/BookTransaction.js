@@ -17,7 +17,7 @@ const BookTransactionSchema = new mongoose.Schema({
         type: String,
         require: true
     },
-    transactionType: { //Issue or Reservation
+    transactionType: { 
         type: String,
         require: true,
     },

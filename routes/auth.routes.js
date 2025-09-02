@@ -7,7 +7,7 @@ const router = express.Router();
 router.post("/register", registerUser);
 router.post("/signin", loginUser);
 
-router.get("/profile", protect, (req, res) => {
+router.get("/profile",  (req, res) => {
     res.status(200).json(req.user);
 });
 
